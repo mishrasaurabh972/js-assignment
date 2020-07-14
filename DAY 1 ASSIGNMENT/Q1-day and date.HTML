@@ -1,0 +1,38 @@
+
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <h1 id="day">Today is: </h1>
+        <h1 id="time">Current time is: </h1>
+        <script>
+            var a = new Date();
+            var day = a.getDay();
+            var hour= a.getHours();
+            var minute= a.getMinutes();
+            var time = "AM";
+            if (hour > 12) 
+                {
+                hour=hour-12;
+                time = "PM";
+                } 
+            if(hour<10)
+                {
+                    hour='0'+hour;
+                }
+            if(minute<10)
+                {
+                minute='0'+minute;
+                }
+            if(second<10)
+                {
+                second='0'+second;
+                }
+            var second= a.getSeconds();
+            var days=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+            document.getElementById("day").innerHTML = document.getElementById("day").innerHTML+days[day];
+            document.getElementById("time").innerHTML=document.getElementById("time").innerHTML+hour+" "+time+":"+minute+":"+second;
+        </script>
+    </body> 
+    </html>

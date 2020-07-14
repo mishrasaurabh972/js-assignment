@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>This is my First JS assignment Q3</title>
+        <h1>This is my First JS assignment Q3</h1>
+    </head>
+<body>
+<script>
+var a = new Date();
+var dd = a.getDate();
+var mm = a.getMonth()+1;
+var yyyy = a.getFullYear();
+
+if(dd<10)
+{
+    dd='0'+dd;
+}
+if(mm<10)
+{
+    mm='0'+mm;
+}
+a = mm+'-'+dd+'-'+yyyy;
+    document.write(a+",\n");
+a = mm+'/'+dd+'/'+yyyy;
+    document.write(a+"\n or \n");
+    a = dd+'-'+mm+'-'+yyyy;
+    document.write(a+",\n");
+a = dd+'/'+mm+'/'+yyyy;
+    document.write(a);
+</script>
+</body>
