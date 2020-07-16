@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let text = "My name is ALPHA with Bravo alongwith ChARlIE";
+        console.log(text);
+        // My name is ALPHA with Bravo alongwith ChARlIE
+        console.log(text.length);
+        // It will give you the length of the string including spaces:45
+        console.log(text.toLowerCase());
+        // It will convert whole string to the lower case:my name is alpha with bravo alongwith charlie
+        console.log(text.toLocaleUpperCase());
+        // It will convert whole string to the UPPER case: MY NAME IS ALPHA WITH BRAVO ALONGWITH CHARLIE
+        console.log(text.substring(1,5));
+        // It will print the string starting at index 1 and till index 5: y na
+        console.log(text.substring(15));
+        // It will print the whole string from the index 15, as here end value is not defined: A with Bravo alongwith ChARlIE
+        console.log(text.lastIndexOf('A'));
+        // It will give the index/position of the last 'A' in the string: 40
+        console.log(text.lastIndexOf('a'));
+        // It will give the index/position of the last 'a' in the string: 28
+        console.log(text[5]);
+        // It will give the character at index 5 of the string: m
+        console.log(text[15]);
+        // It will give the character at index 15 of the string: A
+        console.log(text.indexOf('M'));
+        // It will give the  at index of M in the string: 0
+        console.log(text.indexOf('B'));
+        // It will give the  at index of B in the string: 22
+        console.log(text.indexOf('b'));
+        // It will give the  at index of b in the string: -1 because 'b' is not present in the string defined above.
+        console.log(text.charAt(12));
+        // It will return the character at the index 12 in the string.: L
+        console.log(text.endsWith('E'));
+        // It will check whether the string ends with E: true, because the gtring ends with E
+        console.log(text.endsWith('a'));
+        // It will check whether the string ends with a: false
+        console.log(text.split(' '));
+        /* It will split the given string from the spaces in different parts.:
+         (8) ["My", "name", "is", "ALPHA", "with", "Bravo", "alongwith", "ChARlIE"]
+            0: "My"
+            1: "name"
+            2: "is"
+            3: "ALPHA"
+            4: "with"
+            5: "Bravo"
+            6: "alongwith"
+            7: "ChARlIE"
+            length: 8
+            __proto__: Array(0)
+        */
+        console.log(text.slice(2,40));
+        // It will slice the string after index 2 and till before index 40
+        console.log(text.replace('My', 'your'));
+        // It will replacr the text 'My' with 'your' in the string.
+        console.log(text.replace('name','funny'));
+        console.log(text.replace('fun','funny'));
+
+        let array = ['one', 'two', 'three', 'four'];
+        // Array is defined with four elements at indexes 0,1,2,3
+        console.log(array);
+        /* It will display the array: 
+        (4) ["one", "two", "three", "four"]
+        0: "one"
+        1: "two"
+        2: "three"
+        3: "four"
+        length: 4
+        __proto__: Array(0)
+        */
+        console.log(Array.isArray(text));
+        // It will check whether the given variable is array or not and return true if yes else false.: false because we have defined text as string.
+        console.log(Array.isArray(array));
+        // it will return : true
+        console.log(array.reverse());
+        /* It will reverse the whole contents of the array.:
+        (4) ["four", "three", "two", "one"]
+        0: "four"
+        1: "three"
+        2: "two"
+        3: "one"
+        length: 4
+        __proto__: Array(0)
+        */
+        console.log(array[2]);
+        // It will give the character at index 2 of the string: two
+        let arr = ['four','five'];
+        console.log(array.concat(arr));
+        // This will concat two arrays
+        array.unshift('zero');
+        console.log(array);
+    </script>
+</body>
+</html>
