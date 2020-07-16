@@ -93,6 +93,27 @@
         console.log(array.concat(arr));
         // This will concat two arrays
         array.unshift('zero');
+        // It will add an element zero at the start of an array defined as 'array'
+
+        console.log(array);
+        /*
+        Array(5)
+        0: "zero"
+        1: "four"
+        2: "three"
+        3: "two"
+        4: "one"
+        length: 5
+        __proto__: Array(0)
+        */
+        array.shift('');
+        // It is used to remove the first element
+        console.log(array);
+        array.push('seven');
+        // It is used to add an element at last index of an array
+        console.log(array);
+        array.pop('');
+        //  It is used to remove an last element of an array
         console.log(array);
     </script>
 </body>
