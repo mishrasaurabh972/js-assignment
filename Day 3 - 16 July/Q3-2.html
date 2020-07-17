@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<h3>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>
+        <script>
+            let N = prompt(`Input percentage in 0 - 100 range`);
+            let A = Number(N);
+            document.write(`Input: ${A}`);
+            switch (true) {
+                case (A>=90 && A<=100):
+                    document.write(`<br>Output: Marks are ${A} and grade is A+`);
+                    break;
+                case (A>=85 && A<=89):
+                    document.write(`<br>Output: Marks are ${A} and grade is A`);
+                    break;
+                case (A>=80 && A<=84):
+                    document.write(`<br>Output: Marks are ${A} and grade is A-`);
+                    break;
+                case (A>=75 && A<=79):
+                    document.write(`<br>Output: Marks are ${A} and grade is B+`);
+                    break;
+                case (A>=70 && A<=74):
+                    document.write(`<br>Output: Marks are ${A} and grade is B`);
+                    break;
+                case (A>=65 && A<=69):
+                    document.write(`<br>Output: Marks are ${A} and grade is C+`);
+                    break;
+                case (A>=60 && A<=64):
+                    document.write(`<br>Output: Marks are ${A} and grade is C`);
+                    break;
+                case (A>=55 && A<=59):
+                    document.write(`<br>Output: Marks are ${A} and grade is D+`);
+                    break;
+                case (A>=50 && A<=54):
+                    document.write(`<br>Output: Marks are ${A} and grade is D`);
+                    break;
+                case (A>=40 && A<=49):
+                    document.write(`<br>Output: Marks are ${A} and grade is E`);
+                    break;
+                case (A>=0 && A<=39):
+                    document.write(`<br>Output: Marks are ${A} and grade is F`);
+                    break;
+                default:
+                    document.write(`<br>Output: The Number entered is not Valid`);
+                    break;
+            }
+        </script>
+    </h3>
+</body>
+</html>
