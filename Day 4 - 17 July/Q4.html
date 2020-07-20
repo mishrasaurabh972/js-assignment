@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <h2>
+        <script>
+            let num1 = prompt(`Enter two numbers`);
+            let N = num1.split(" ");
+            let a = (Number(N[0]));
+            let b = (Number(N[1]));
+            let add = a + b;
+            let sub = a - b;
+            let mul = a * b;
+            let div = ((a / b).toFixed(4));
+            let sqt = Math.sqrt(a);
+            let per = div * 100;
+            console.log(`The addition of ${a} and ${b} is ${add}`);
+            console.log(`The subtraction of ${a} and ${b} is ${sub}`);
+            console.log(`The multiplication of ${a} and ${b} is ${mul}`);
+            console.log(`The divion of ${a} and ${b} is ${div}`);
+            console.log(`The sqaure root of ${a} is ${sqt}`);
+            console.log(`${a} is the ${per}% of ${b}`);
+        </script>
+    </h2>
+</body>
+</html>

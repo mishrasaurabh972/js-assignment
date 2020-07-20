@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructuring</title>
+</head>
+<body>
+    <h2>
+        <script>
+            const student = {
+                name: "Helsinki",
+                age: 24,
+                projects: {
+                    dicegame: "Two player dice game using javasscript"
+                }
+            }
+            const{name,age,projects} =student
+            console.log(student.name);
+            console.log(student.age);
+            console.log(student.projects);
+            console.log(student.projects.dicegame);
+        </script>
+    </h2>
+</body>
+</html>
